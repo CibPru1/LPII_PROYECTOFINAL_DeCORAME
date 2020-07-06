@@ -1,4 +1,4 @@
-package beans;
+package com.decorame.beans;
 
 public class UsuarioDTO {
 	

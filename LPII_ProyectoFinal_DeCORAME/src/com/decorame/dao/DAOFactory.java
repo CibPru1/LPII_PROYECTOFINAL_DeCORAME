@@ -1,6 +1,7 @@
-package dao;
+package com.decorame.dao;
 
-import interfaces.UsuarioDAO;
+import com.decorame.interfaces.DistritoDAO;
+import com.decorame.interfaces.UsuarioDAO;
 
 public abstract class DAOFactory {
 
@@ -8,6 +9,7 @@ public abstract class DAOFactory {
 	public static final int SQL = 2;
 	
 	public abstract UsuarioDAO getUsuarioDAO();
+	public abstract DistritoDAO getDistritoDAO();
 	
 	public static DAOFactory getDAOFactory(int qFactory) {
 		switch (qFactory) {
