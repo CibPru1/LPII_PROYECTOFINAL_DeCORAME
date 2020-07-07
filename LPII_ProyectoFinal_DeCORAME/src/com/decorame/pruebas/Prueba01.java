@@ -12,7 +12,7 @@ public class Prueba01 {
 	
 	DAOFactory factory = DAOFactory.getDAOFactory(DAOFactory.MYSQL);
 	DistritoDAO distrito = factory.getDistritoDAO();
-	
+//	
 	List<DistritoDTO> listDistrito = distrito.listar();
 	
 	listDistrito.forEach(System.out::println);
