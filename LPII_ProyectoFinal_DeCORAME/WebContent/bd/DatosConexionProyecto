@@ -1,4 +1,0 @@
-DRIVER = com.mysql.jdbc.Driver
-URL = jdbc:mysql://localhost:3306/lp2_db_decorame
-USER = root
-PASS =
