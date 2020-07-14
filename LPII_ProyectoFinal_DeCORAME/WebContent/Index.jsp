@@ -232,11 +232,11 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
     </main>
  <hr class="featurette-divider">
   </body>
-     <footer class="row">
+    <footer class="row">
     
             <div class="col-md-3">
              <br>  <br>  <br>
-               <p style="background-color:Gray; color:white;font-family:courier; font-size:200%; text-align:center;">DeCORAME</p>
+               <p style="background-color:white; color:black;font-family:courier; font-size:200%; text-align:center;">DeCORAME</p>
             </div>
 			<div class="col-md-4">
                 <ul class="nav flex-column">
@@ -263,6 +263,7 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
             			<button type="button" class="btn btn-success" >  Decórame</button>
             		</div>
             		<br>
+            		<br>
             		<div class="col-md-12">
 	            		<p class="blockquote-footer">Cuentanos tu proyecto y juntos
 	            	decoraremos tus ideas</p>
@@ -274,10 +275,13 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
             		<div class="col-md-12">
             			<button type="button" class="btn btn-success" disabled>Siguenos en Redes</button>
             		</div>
+            		<br>
+            		<br>
             		<div class="col-md-12 redes">
+            			<img src="img/facebook.png" alt="Facebook">
 	            		<img src="img/youtube.png" alt="Youtube">
 		                <img src="img/twitter.png" alt="Twitter">
-		                <img src="img/facebook.png" alt="Facebook">
+
             		</div>
             	</div>
             </div>

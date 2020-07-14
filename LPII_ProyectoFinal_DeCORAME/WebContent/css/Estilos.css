@@ -62,3 +62,39 @@ input[type=submit]:hover {
   }
   
   /*TEST*/
+  
+  /* Estilos para pagina de Planes - Karen */
+ #contenedor {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	margin: 20px auto;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+}
+
+section {
+	width: 50%;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+figure {
+	width: 45%;
+}
+figure img{
+	width: 100%;
+	margin: 15px 0 0 0;
+	display: block;
+}
+
+figure figcaption {
+	text-align: center;
+	color: green;
+	background-color: white;
+}

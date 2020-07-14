@@ -1,0 +1,78 @@
+@charset "ISO-8859-1";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#contenedor {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	margin: 20px auto;
+}
+
+header a {
+	font-family:verdana; 
+	font-size:90%;
+}
+
+header img {
+	width: 15%;
+	vertical-align: bottom;
+}
+nav {
+	padding: 10px;
+}
+
+nav a{
+	color: white;
+}
+main {
+	display: flex;
+	flex-direction: row;
+}
+
+ul {
+	margin: 0 0 0 20px;
+}
+
+section {
+	width: 100%;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+figure {
+	width: 45%;
+	margin: 15px 10px 15px 10px;
+	
+}
+figure img{
+	width: 100%;
+	margin: 20px 30px 20px 30px;
+	display: block;
+}
+
+figure ul {
+	color: grey;
+	background-color: white;
+}
+
+figure h1 {
+	text-align: center;
+}
+
+footer p {
+	
+	background-color: white;
+	color: black;
+	font-family:verdana; 
+	font-size:200%; 
+
+	               
+}
