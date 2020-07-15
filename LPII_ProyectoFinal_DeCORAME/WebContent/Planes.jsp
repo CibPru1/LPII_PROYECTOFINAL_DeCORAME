@@ -94,10 +94,13 @@
 	             <p><a type="button" class="btn btn-outline-success" href="Test.jsp" role="button">Comprar</a></p>
 			</figure>
 		</section>
-		
-		
+		<br>
+		<br>
 	</main>
-	
+	<br>
+	<br>
+	<br>
+			
      <footer class="row">
     
             <div class="col-md-3">

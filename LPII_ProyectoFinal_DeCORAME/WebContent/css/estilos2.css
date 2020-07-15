@@ -45,22 +45,43 @@ section {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	border-bottom: 2px solid grey;
 }
 
 figure {
 	width: 45%;
 	margin: 15px 10px 15px 10px;
 	
+	
 }
+
+figure2 {
+	width: 25%;
+	margin: 0px 0px 0px 0px;
+}
+
 figure img{
 	width: 100%;
 	margin: 20px 30px 20px 30px;
 	display: block;
 }
 
+figure2 img{
+	width: 55%;
+	margin: 0px 0px 0px 0px;
+	display: block;
+}
+
+figure2 figcaption {
+	text-align: left;
+	color: gray;
+	background-color: white;
+}
+
 figure ul {
 	color: grey;
 	background-color: white;
+	
 }
 
 figure h1 {
@@ -72,7 +93,5 @@ footer p {
 	background-color: white;
 	color: black;
 	font-family:verdana; 
-	font-size:200%; 
-
-	               
+	font-size:200%;                
 }

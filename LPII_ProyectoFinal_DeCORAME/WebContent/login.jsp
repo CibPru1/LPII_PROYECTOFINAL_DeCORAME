@@ -5,23 +5,23 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>DeCORAME - Ingreso</title>
-<link href="css/stilos.css" rel="stylesheet">
-<link href="css/styles.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/styles-form.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">	
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link href="css/estilos2.css" rel="stylesheet">
+
 </head>
 
 <body>
 
 	<div class="container-fluid">
 	
-        <header id="cabecera" class="row">
-            <div class="col-2">
-				<a class="navbar-brand" href="#">
-				  <img src="img/logofree.png" style="width:80%;margin-top:-15px" alt="Decorame">
-				</a>
-            </div>
+	 <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <img src="img/Planes/LogoDecorame.png"alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="col-8">
             	<ul class="nav nav-pills nav-fill">
 				  <li class="nav-item">
@@ -44,9 +44,13 @@
             <div class="col-2">
                 <button type="button" class="btn btn-outline-success">Decórame</button>
             </div>
-        </header>
-
-        <div id="seccion" style="height: 450px;padding-top:50px;" class="row">
+        </div>
+    </header>
+			<br>
+			<br>
+			<br>
+			<br>
+		<div id="seccion" style="height: 450px;padding-top:50px;" class="row">
         	<div class="col-3"></div>
         	<div class="col-6">
 	        	<form action="ingreso" method="post">
@@ -66,14 +70,15 @@
 		                <div class="col-5">
 		                    <input type="password" name="txtClave" class="form-control" placeholder="Ingrese contraseña" required>
 		                </div>
-		                <div class="col-2"></div>
 		            </div>
+				    <br>
+				    <br>      		            
 		            <div class="form-group row">
-		                <label class="col-3">&nbsp;</label>
+		                <label class="col-2">&nbsp;</label>
 		                <div class="input-group col-3">
-		                    <button type="submit" class="btn btn-outline-primary tamano">Ingresar</button>
+		                    <button type="submit" class="btn btn-outline-primary tamano">Registrar</button>
 		                </div>
-		                <div class="col-6">
+		                <div class="col-5">
 		                	<p style="text-align:left;">Eres nuevo? Regístrate <a href="registro.jsp">aquí</a> </p>
 		            	</div>
 		            </div>
@@ -81,11 +86,42 @@
         	</div>
         	<div class="col-3">
         	</div>
+        	<br>
+			<br>
 		</div>
-
-        <footer class="row">
+		<main>		
+			<section>
+				<figure2>
+					<img src="img/Login/comedor.jpg"alt="">
+					<figcaption>Transforma tu Comedor</figcaption>
+				</figure2>
+				<figure2>
+					<img src="img/Login/dormitorio.jpg"alt="">
+					<figcaption>Renueva tu Dormitorio</figcaption>
+				</figure2>
+				<figure2>
+					<img src="img/Login/sala.jpg"alt="">
+					<figcaption>Ilumina tu sala</figcaption>
+				</figure2>
+				<figure2>
+					<img src="img/Login/terraza.jpg"alt="">
+					<figcaption>Dale vida a la terraza</figcaption>
+									<br>
+				</figure2>
+				<br>
+				<br>
+			</section>
+			<br>
+			<br>
+		</main>
+		<br>
+		<br>
+			
+     <footer class="row">
             <div class="col-md-3">
-                <img src="img/logofree.png" style="width:80%;" alt="Decorame">
+             <br>  <br>  <br>
+              
+               <img src="img/Planes/LogoDecorame.png" alt="Facebook">
             </div>
 			<div class="col-md-4">
                 <ul class="nav flex-column">
@@ -106,26 +142,31 @@
 				  </li>
 				</ul>
             </div>
-            <div class="col-md-3">
-            	<div class="row">
-            		<div class="col-md-12">
-            			<button type="button" class="btn btn-success" disabled>Decórame</button>
-            		</div>
-            		<div class="col-md-12">
-	            		<p>Cuentanos tu proyecto y juntos</p> 
-	            		<p>decoraremos tus ideas</p>
-            		</div>
-            	</div>
-            </div>
             <div class="col-md-2">
             	<div class="row">
             		<div class="col-md-12">
-            			<button type="button" class="btn btn-success" disabled>Siguenos en Redes</button>
+            			<button type="button" class="btn btn-success" >  Decórame</button>
             		</div>
+            		<br>
+            		<br>
+            		<div class="col-md-12">
+	            		<p class="blockquote-footer">Cuentanos tu proyecto y juntos
+	            	decoraremos tus ideas</p>
+            		</div>
+            	</div>
+            </div>
+             <div class="col-md-2">
+            	<div class="row">
+            		<div class="col-md-12">
+            			<button type="button" class="btn btn-success" disabled>Síguenos en:</button>
+            		</div>
+            		<br>
+            		<br>
             		<div class="col-md-12 redes">
+            			<img src="img/facebook.png" alt="Facebook">
 	            		<img src="img/youtube.png" alt="Youtube">
 		                <img src="img/twitter.png" alt="Twitter">
-		                <img src="img/facebook.png" alt="Facebook">
+
             		</div>
             	</div>
             </div>
