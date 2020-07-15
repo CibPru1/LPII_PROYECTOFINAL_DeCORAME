@@ -1,0 +1,137 @@
+  h1 { text-align: center;
+  font-size: 30px;
+  color: #13568c;
+   text-transform:none; font-family:Georgia, "Times New Roman", Times, serif;}
+#contenedor {
+	width:70%; 
+	margin:50px auto;
+}
+.table{width:100%;}
+th td{padding: 20px; }
+button{border-radio: 10px 10 px 5px 5px;}
+.Can{line-height: 26px;
+
+border-collapse: collapse;
+border-spacing: 0;
+text-align: left;
+font-family: 'covesbold', sans-serif;
+color: #333333;
+font-weight: 500;
+font-size: 16px;
+text-shadow: transparent 0px 0px 0px, rgba(0,0,0,0.68) 0px 0px 0px !important;
+background: 0 0;
+border: 0;
+margin: 0;
+padding: 0;
+vertical-align: baseline;
+outline: 0;
+padding: 0 5px;
+    width: 22px;
+    display: inline;
+    text-align: center;}
+
+input[type="button" i] {
+border-collapse: collapse;
+border-spacing: 0;
+text-shadow: transparent 0px 0px 0px, rgba(0,0,0,0.68) 0px 0px 0px !important;
+-webkit-appearance: none;
+padding: 0;
+width: 17px;
+height: 17px;
+line-height: 17px;
+margin: 0;
+display: inline;
+font-size: 14px;
+border: 0;
+cursor: pointer;
+outline: 0;
+transition: all .3s ease-out;
+background-color: #bcbcbc;
+color: #fff;
+border-radius: 500px;
+font-family: "Times New Roman";}
+
+.text{
+border-collapse: collapse;
+border-spacing: 0;
+text-shadow: transparent 0px 0px 0px, rgba(0,0,0,0.68) 0px 0px 0px !important;
+outline: 0;
+resize: none;
+line-height: 17px;
+padding: 0 5px;
+width: 22px;
+display: inline;
+text-align: center;
+font-weight: 600;
+background: 0 0;
+border: 2px solid #c0c0c0;
+font-family: 'coveslight', serif;
+font-size: 18px;
+color: #000000;
+
+}
+#quantity_5f0d211d5bb5f{
+	padding: 0 5px;
+    width: 22px;
+    display: inline;
+    text-align: center;
+}
+#Tabli{width:15%; 
+	margin:0 0 5px;
+ }
+
+.tablitas{line-height: 1.5;
+hyphens: manual;
+color: #7a7a7a;
+text-shadow: transparent 0px 0px 0px, rgba(0,0,0,0.68) 0px 0px 0px !important;
+font-family: inherit;
+font-style: inherit;
+font-weight: inherit;
+outline: 0;
+vertical-align: baseline;
+background-color: transparent;
+font-size: .9em;
+border-spacing: 0;
+box-sizing: border-box;
+border:5px solid rgba(0,0,0,.1);
+text-align: right;
+width: 20%;
+border-radius: 5px;
+border-collapse: separate;
+margin: 0 0 6px;
+padding: 0;}
+
+.Tab{text-align: left;
+line-height: 1.5;
+hyphens: manual;
+color: #7a7a7a;
+text-shadow: transparent 0px 0px 0px, rgba(0,0,0,0.68) 0px 0px 0px !important;
+border: 0;
+font-family: inherit;
+font-size: 100%;
+font-style: inherit;
+font-weight: inherit;
+margin: 0;
+outline: 0;
+padding: 0;
+vertical-align: baseline;
+box-sizing: border-box;
+width: 100%;}
+.Tab2{text-align: left;
+line-height: 1.5;
+hyphens: manual;
+color: #7a7a7a;
+text-shadow: transparent 0px 0px 0px, rgba(0,0,0,0.68) 0px 0px 0px !important;
+border: 0;
+font-family: inherit;
+font-size: 100%;
+font-style: inherit;
+font-weight: inherit;
+margin: 0;
+outline: 0;
+padding: 0;
+vertical-align: baseline;
+box-sizing: border-box;
+float: right;
+width:22%;}
+
