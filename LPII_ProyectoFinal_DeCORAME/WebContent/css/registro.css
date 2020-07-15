@@ -1,0 +1,110 @@
+body,td,quote,small,form,input,ul,li,ol,label{
+    margin:0px;
+    padding:0px;
+}
+h1,h2,h3,p{text-align:right;}
+#fec{width:55%;}
+body{
+	 background: #9bb7e6;
+    margin-top:15px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#51555C;
+    height:auto;
+    width:65%;
+    font-size:11px;
+}
+
+/* Form styles */
+
+input,select{
+    padding:3px;
+    color:#333333;
+
+    border:1px solid #96A6C5;
+    margin-top:1px;
+    width:200px;
+    font-size:11px;
+}
+
+select{
+    width:auto;
+    padding:1px;
+}
+
+.formline{
+    padding:3px;
+}
+
+label{
+    font-size:20px;
+    text-align:left;
+}
+
+table{
+
+    width:75%;
+}
+
+td{
+    font-size:15px;
+}
+
+.input-container{
+    padding:10px;
+}
+
+#div-regForm,.registered{
+    border:3px solid #eeeeee;
+    padding:20px;
+
+    background:url(img/bg.jpg) repeat-x #ffffff;
+    color:#000000;
+
+    margin:20px auto 20px auto;
+    width:70%;
+}
+
+.form-title,
+.form-sub-title{
+    font-size:20px;
+    font-family:"Lucida Grande",Tahoma,Verdana,Arial,sans-serif;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.form-sub-title{
+    font-weight:normal;
+    padding:6px 0 15px 0;
+}
+
+.greenButton{
+    width:40%;
+    margin:10px 0 0 2px;
+    padding:3px 4px 3px 4px;
+    color:white;
+    background-color:#fd4733;
+    outline:none;
+    border:1px solid #006600;
+    font-weight:bold;
+}
+
+.greenButton:active{
+    background-color:#006600;
+    padding:4px 3px 2px 5px;
+}
+
+#loading{
+    left:10px;
+    position:relative;
+    top:3px;
+    visibility:hidden;
+}
+
+#error{
+    background-color:#ffebe8;
+    border:1px solid #dd3c10;
+    padding:7px 3px;
+    text-align:center;
+    margin-top:10px;
+    visibility:hidden;
+}
