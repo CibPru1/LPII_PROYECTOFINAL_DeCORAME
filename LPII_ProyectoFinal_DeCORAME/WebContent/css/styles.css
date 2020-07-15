@@ -1,3 +1,16 @@
+@charset "ISO-8859-1";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+  
+  body {
+  background: #fff;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+}
 #cabecera {
     margin: 10px 0;
 }
@@ -26,17 +39,18 @@
 }
 
 #farmCruz {
-    width: 450px;
+    width: 500px;
     height: 320px;
 }
 
-#piePagina {
-    margin: 10px 0 0 0;
+footer p {
+	
+	background-color: white;
+	color: black;
+	font-family:verdana; 
+	font-size:200%;                
 }
 
-#piePagina p {
-    line-height: 65px;
-}
 
 .redes {
     line-height: 60px;

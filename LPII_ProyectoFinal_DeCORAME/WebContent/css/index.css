@@ -1,0 +1,212 @@
+@charset "ISO-8859-1";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+  
+  body {
+  width:100%;
+  background: #ffffff;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+}
+ main {
+ text-align:center; 
+	flex-direction: center;
+}
+a {
+  color: #18d26e;
+  transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+	
+  color: #18d36e;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+/* Back to top button */
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #18d26e;
+  width: 30px;
+  height: 44px;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  border-radius: 50%;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+  z-index: 11;
+}
+
+.back-to-top i {
+  padding-top: 12px;
+  color: #fff;
+}
+
+/* Prelaoder */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #f2f2f2;
+  border-top: 6px solid #18d26e;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+  h1 { text-align: center;
+  font-size: 100px;
+  color: green;
+   text-transform:none; font-family:Georgia, "Times New Roman", Times, serif;}
+  
+  /* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+
+div.wrapper{display:block; width:100%; margin:0;  margin:15 10rem 20; text-align:right;}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin:2 10rem 2; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 100;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width:25%;
+   margin:2 10rem 2;
+  height: 350px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.img1:hover {
+  opacity: 0.5;
+}
+div.gallery {
+	 margin:15 20rem 30;
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 350px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {  margin:2 10rem 20;
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+	 margin:2 10rem 2;
+  padding: 15px;
+  text-align: center;
+}
+/* Dashed red border */
+hr.new2 {
+  border-top: 1px dashed black;
+}
+footer p {
+	
+	background-color: white;
+	color: black;
+	font-family:verdana; 
+	font-size:200%;                
+}

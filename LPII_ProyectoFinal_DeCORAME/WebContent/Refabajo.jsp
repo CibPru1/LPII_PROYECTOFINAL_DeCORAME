@@ -52,7 +52,7 @@
          <div class="col-md-2">
             	<div class="row">
             		<div class="col-md-12">
-            			<button type="button" class="btn btn-success" disabled>Siguenos en Redes</button>
+            			<input type="button" >Siguenos en Redes</input>
             		</div>
             		<div class="col-md-12 redes">
 	            		<img src="img/youtube.png" alt="Youtube">
