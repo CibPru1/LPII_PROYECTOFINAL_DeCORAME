@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 06-07-2020 a las 17:23:57
+-- Tiempo de generación: 15-07-2020 a las 01:15:44
 -- Versión del servidor: 5.7.30-0ubuntu0.18.04.1
 -- Versión de PHP: 7.2.24-0ubuntu0.18.04.6
 
@@ -25,10 +25,6 @@ SET time_zone = "+00:00";
 --
 -- Estructura de tabla para la tabla `ambientes`
 --
-CREATE DATABASE lp2_db_decorame;
-
-USE lp2_db_decorame;
-
 
 CREATE TABLE `ambientes` (
   `idAmbiente` int(11) NOT NULL,
@@ -60,9 +56,6 @@ CREATE TABLE `clientes` (
   `apeMat` varchar(50) NOT NULL,
   `fecNac` date NOT NULL,
   `direccion` varchar(90) NOT NULL,
-  `calle` varchar(30) NOT NULL,
-  `numeroCalle` varchar(25) NOT NULL,
-  `numeroDepartamento` varchar(25) NOT NULL,
   `urbanizacion` varchar(50) NOT NULL,
   `idDepartamento` int(11) NOT NULL,
   `idProvincia` int(11) NOT NULL,
@@ -194,9 +187,6 @@ CREATE TABLE `empleados` (
   `apeMat` varchar(50) NOT NULL,
   `fecNac` date NOT NULL,
   `direccion` varchar(90) NOT NULL,
-  `calle` int(20) NOT NULL,
-  `numCalle` int(20) NOT NULL,
-  `numDepartamento` int(20) NOT NULL,
   `urbanizacion` int(20) NOT NULL,
   `idDepartamento` int(11) NOT NULL,
   `idProvincia` int(11) NOT NULL,
