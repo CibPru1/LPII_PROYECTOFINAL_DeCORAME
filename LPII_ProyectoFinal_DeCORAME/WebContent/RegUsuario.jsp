@@ -156,20 +156,6 @@
 
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <footer><jsp:include page="Refabajo.jsp"></jsp:include></footer>
 </body>
 </html>
