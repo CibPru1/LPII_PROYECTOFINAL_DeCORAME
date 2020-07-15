@@ -102,7 +102,6 @@
 	<br>
 			
      <footer class="row">
-    
             <div class="col-md-3">
              <br>  <br>  <br>
               
@@ -143,7 +142,7 @@
              <div class="col-md-2">
             	<div class="row">
             		<div class="col-md-12">
-            			<button type="button" class="btn btn-success" disabled>Síguenos</button>
+            			<button type="button" class="btn btn-success" disabled>Síguenos en:</button>
             		</div>
             		<br>
             		<br>
@@ -156,7 +155,6 @@
             	</div>
             </div>
         </footer>
-	
 </div>
 
 

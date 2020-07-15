@@ -76,7 +76,7 @@
 		            <div class="form-group row">
 		                <label class="col-2">&nbsp;</label>
 		                <div class="input-group col-3">
-		                    <button type="submit" class="btn btn-outline-primary tamano">Registrar</button>
+		                    <button type="submit" class="btn btn-outline-primary tamano">Ingresar</button>
 		                </div>
 		                <div class="col-5">
 		                	<p style="text-align:left;">Eres nuevo? Regístrate <a href="registro.jsp">aquí</a> </p>
