@@ -1,23 +1,21 @@
-<!DOCTYPE html>
-<%@page import="com.decorame.beans.AmbienteDTO"%>
-<%@page import="org.apache.jasper.tagplugins.jstl.core.ForEach"%>
-<%@page import="java.util.ArrayList"%>
-<html lang="esS">
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" 
-	  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link href="css/estilos2.css" rel="stylesheet">
+
+
 </head>
 <body>
 
-<header>
+<div id="contenedor">
+
+	 <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <img src="img/Planes/LogoDecorame.png"alt="">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +23,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="col-8">
-                <ul class="nav flex-column">
+            	<ul class="nav nav-pills nav-fill">
 				  <li class="nav-item">
 				    <a class="nav-link" href="Index.jsp">Conócenos</a>
 				  </li>
@@ -47,77 +45,34 @@
                 <button type="button" class="btn btn-outline-success">Decórame</button>
             </div>
         </div>
-</header>
-<br>
-<br>
-<br>
-<br>
+    </header>
 
-			<main>		
-				<section>
-					<figure3>
-						<img src="img/Crud/muchosAmbientes.jpg"alt="">
-						<figcaption></figcaption>
-					</figure3>
-					<br>
-					<br>
-				</section>
-				<br>
-				<br>
-			</main>
+	<main>
+		<br>
+	<br>
+	<br>
 
-	<div class="container" action="ambiente">
-		<h2 style="text-align: center; font-size: 20px;color: green; font-style:italic; text-transform:none;">Listado de Ambientes</h2>
-
-	</div>
-	
-	<div class="container" style="height: 450px;padding-top:50px;" class="row">
-		<table class="table">
-		
-
-			<tr> <%--Cabecera --%>
-				<th></th>
-				<th>IdAmbiente</th>
-				<th>Nombre</th>
-				<th></th>
-				<th></th>
-			</tr>
-
-		<% 
-			//codigo java, captura el listado enviado desde el servlet(como atributo) y mostrarlo
-			ArrayList<AmbienteDTO> lista=(ArrayList<AmbienteDTO>)request.getAttribute("listadito");
+		<aside>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h2 style="font-family:verdana;"  class="text-center">¿Cuál es la mejor forma de contactar con DeCORAME?</h2>
+			<p>¿No estás seguro que plan elegir? ¿Tienes dudas sobre el proceso de diseño? </p>
+			<p>Queremos hablar contigo y ayudarte con todas las dudas que tengas. Puedes llamarnos al 965 081 420, 
+			de lunes a viernes de 10 a 19h.
+			También nos puedes contactar por Whatsapp.
+			O si lo prefieres lo puedes hacer por email a: decoramearquitectos@gmail.com</p>
+			<br>
+			<img src="img/Portada/p10.jpg"alt="">
+		</aside>
+		<br>
+		<br>
+	</main>
+	<br>
+	<br>
 			
-			//--muestra los datos, si la lista tiene datos
-			if(lista != null){
-				for(AmbienteDTO x: lista){
-				%>
-					
-				<tr class="grilla_campo">
-					<td></td>
-					<td><%=x.getIdAmbiente()  %></td>
-					<td><%=x.getNombre()  %></td>
-					<td></td>					
-					<td></td>
-				</tr>
-		
-				<% 		
-				}
-			}
-		%>
-
-		</table>
-		
-		<a class="btn btn-secondary" href="CrudServicios.jsp">Regresar</a>
-	</div>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-    <footer class="row">
+     <footer class="row">
             <div class="col-md-3">
              <br>  <br>  <br>
               
@@ -171,9 +126,8 @@
             	</div>
             </div>
         </footer>
-
+</div>
 
 
 </body>
 </html>
-
