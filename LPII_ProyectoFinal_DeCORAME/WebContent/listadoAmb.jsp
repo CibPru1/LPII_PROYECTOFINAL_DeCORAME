@@ -67,7 +67,7 @@
 			</main>
 
 	<div class="container" action="ambiente">
-		<h2 style="text-align: center; font-size: 40px;color: green; font-style:italic; text-transform:none;">Listado de Ambientes</h2>
+		<h2 style="text-align: center; font-size: 20px;color: green; font-style:italic; text-transform:none;">Listado de Ambientes</h2>
 
 	</div>
 	
@@ -107,7 +107,7 @@
 
 		</table>
 		
-		<a class="btn btn-outline-success" href="CrudServicios.jsp">Regresar</a>
+		<a class="btn btn-secondary" href="CrudServicios.jsp">Regresar</a>
 	</div>
 
 <br>

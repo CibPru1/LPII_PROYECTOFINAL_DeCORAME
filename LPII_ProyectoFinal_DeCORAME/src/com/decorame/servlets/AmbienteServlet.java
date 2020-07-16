@@ -72,8 +72,42 @@ public class AmbienteServlet extends HttpServlet {
 		
 	}
 
-	private void actualizar(HttpServletRequest request, HttpServletResponse response) {
-		// TODO Auto-generated method stub
+	private void actualizar(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("Entro al actualizar Ambiente");
+		//variables
+		int idambiente;
+		String nom;	
+		String mensaje;
+		String url;
+		
+		//entrada de datos
+		idambiente=Integer.parseInt(request.getParameter("IdAmbiente"));
+		nom=request.getParameter("txtAmbiente");
+
+		
+		//comprobación
+		AmbienteDTO a = new AmbienteDTO();
+		a.setIdAmbiente(idambiente);
+		a.setNombre(nom);
+		System.out.println(a);
+		
+		//procesos
+		//--MySQLProductoDAO gp = new MySQLProductoDAO();
+		DAOFactory fabrica = DAOFactory.getDAOFactory(DAOFactory.MYSQL);
+		AmbienteDAO dao = fabrica.getAmbienteDAO();
+		
+		int ok = dao.actualizarAmb(a);
+		if(ok == 0) {
+			mensaje="No se pudo realizar ACTUALIZACIÓN";
+			url="/CrudServicios.jsp";
+		}else {
+			mensaje="ACTUALIZACIÓN correcta de " + " ' " + a.getNombre() + " ' " + "OK";
+			url="/CrudServicios.jsp";
+		}
+		
+		//salida
+		request.setAttribute("mensaje", mensaje);
+		request.getRequestDispatcher(url).forward(request, response);
 		
 	}
 
@@ -87,7 +121,6 @@ public class AmbienteServlet extends HttpServlet {
 		String url;
 		
 		//entrada de datos
-
 		idambiente=Integer.parseInt(request.getParameter("IdAmbiente"));
 		nom=request.getParameter("txtAmbiente");
 
@@ -108,8 +141,8 @@ public class AmbienteServlet extends HttpServlet {
 			mensaje="Ambiente no pudo registrase";
 			url="/CrudServicios.jsp";
 		}else {
-			mensaje="Registro exitoso" +" "+ a.getNombre() + " " + "OK";
-			url="/listadoAmb.jsp";
+			mensaje="Registro exitoso" + " ' " + a.getNombre() + " ' " +  "OK";
+			url="/CrudServicios.jsp";
 		}
 		
 		//salida
