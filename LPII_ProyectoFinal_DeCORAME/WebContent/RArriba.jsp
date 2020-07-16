@@ -115,7 +115,7 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">	
-
+<link href="css/estilos2.css" rel="stylesheet">
 
     <title>HOME</title>
 
@@ -127,9 +127,9 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
   </head>
   <body>
 
-    <header>
+	 <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a  style="font-family:courier; font-size:200%;"class="navbar-brand" href="carousel.jsp">DeCORAME</a>
+        <img src="img/Planes/LogoDecorame.png"alt="">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -156,9 +156,7 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
             <div class="col-2">
                 <button type="button" class="btn btn-outline-success">Decórame</button>
             </div>
-          
         </div>
-      </nav>
     </header>
 
 </body>

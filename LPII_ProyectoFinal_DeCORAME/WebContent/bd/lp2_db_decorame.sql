@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 15-07-2020 a las 19:12:58
--- Versión del servidor: 5.7.30-0ubuntu0.18.04.1
--- Versión de PHP: 7.2.24-0ubuntu0.18.04.6
+-- Tiempo de generaciÃ³n: 15-07-2020 a las 19:12:58
+-- VersiÃ³n del servidor: 5.7.30-0ubuntu0.18.04.1
+-- VersiÃ³n de PHP: 7.2.24-0ubuntu0.18.04.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -16,12 +16,13 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
+DROP DATABASE IF EXISTS lp2_db_decorame;
 --
 -- Base de datos: `lp2_db_decorame`
 --
 create database lp2_db_decorame;
 
-use lp2_db_decorame
+use lp2_db_decorame;
 
 -- --------------------------------------------------------
 
@@ -87,7 +88,7 @@ CREATE TABLE `clientes` (
 --
 
 INSERT INTO `clientes` (`idCliente`, `nombre`, `apePat`, `apeMat`, `fecNac`, `direccion`, `urbanizacion`, `idDepartamento`, `idProvincia`, `idDistrito`, `email`, `password`, `celular`) VALUES
-(1, 'Liseth', 'Suarez', 'Montilla', '2000-06-23', 'Los Sauces 23', ' Las Viñas', 15, 50, 18, 'li12341@gmail.com', '12345', '999888777'),
+(1, 'Liseth', 'Suarez', 'Montilla', '2000-06-23', 'Los Sauces 23', ' Las ViÃ±as', 15, 50, 18, 'li12341@gmail.com', '12345', '999888777'),
 (3, 'Francisco', 'Matos', 'Lopez', '1989-07-10', 'Los Sauces 345', 'Girasol', 15, 50, 15, 'francis@gmail.com', '12345', '999777666'),
 (4, 'Dina', 'Yauyos', 'Suarez', '1995-07-13', 'Mz 2 lote 87 Grupo 4', 'Camino azul', 15, 50, 16, 'dina@gmail.com', '12345', '999555333'),
 (5, 'Josue', 'Encias', 'Guerra', '1965-07-03', 'Mz 23 lote 8', 'Porton ', 8, 30, 11, 'encias@gmail.com', '12345', '888555444');
@@ -117,9 +118,9 @@ INSERT INTO `departamentos` (`idDepartamento`, `nombre`) VALUES
 (7, 'Callao'),
 (8, 'Cuzco'),
 (9, 'Huancavelica'),
-(10, 'Huánuco'),
+(10, 'HuÃ¡nuco'),
 (11, 'Ica'),
-(12, 'Junín'),
+(12, 'JunÃ­n'),
 (13, 'La Libertad'),
 (14, 'Lambayeque'),
 (15, 'Lima'),
@@ -167,26 +168,26 @@ INSERT INTO `distrito` (`idDistrito`, `idDepartamento`, `idProvincia`, `nombre`)
 (4, 4, 73, 'Chiguata'),
 (5, 4, 73, 'La Joya'),
 (6, 5, 24, 'Cajamarca'),
-(7, 5, 24, 'Asunción'),
+(7, 5, 24, 'AsunciÃ³n'),
 (8, 5, 25, 'Chota'),
-(9, 5, 25, 'Anguía'),
-(10, 5, 25, 'Chadín'),
+(9, 5, 25, 'AnguÃ­a'),
+(10, 5, 25, 'ChadÃ­n'),
 (11, 8, 30, 'Cusco'),
 (12, 8, 30, 'Ccorca'),
 (13, 15, 51, 'Barranca'),
 (14, 15, 51, 'Supe'),
 (15, 15, 50, 'Lima'),
-(16, 15, 50, 'Ancón'),
+(16, 15, 50, 'AncÃ³n'),
 (17, 15, 50, 'Ate'),
 (18, 15, 50, 'Barranco'),
-(19, 15, 50, 'Breña'),
+(19, 15, 50, 'BreÃ±a'),
 (20, 15, 50, 'Carabayllo'),
 (21, 15, 50, 'Chorrillos'),
 (22, 15, 50, 'Cienguilla'),
 (23, 15, 50, 'Comas'),
 (24, 15, 50, 'El Agustino'),
 (25, 15, 50, 'Lima'),
-(26, 15, 50, 'Jesús María'),
+(26, 15, 50, 'JesÃºs MarÃ­a'),
 (27, 15, 50, 'La Molina'),
 (28, 15, 50, 'San Borja'),
 (29, 15, 50, 'San Isidro'),
@@ -194,11 +195,11 @@ INSERT INTO `distrito` (`idDistrito`, `idDepartamento`, `idProvincia`, `nombre`)
 (31, 15, 49, 'Santa Anita'),
 (32, 15, 50, 'Santiago de Surco'),
 (33, 15, 50, 'San Juan de Miraflores'),
-(34, 15, 50, 'Villa María del Triunfo'),
+(34, 15, 50, 'Villa MarÃ­a del Triunfo'),
 (35, 20, 68, 'Castilla'),
 (36, 20, 68, 'Catacaos'),
 (37, 20, 68, 'Curra Mori'),
-(38, 20, 68, 'El Tallán'),
+(38, 20, 68, 'El TallÃ¡n'),
 (39, 20, 68, 'Pira');
 
 -- --------------------------------------------------------
@@ -230,7 +231,7 @@ CREATE TABLE `empleados` (
 
 INSERT INTO `empleados` (`idEmpleado`, `nombre`, `apePat`, `apeMat`, `fecNac`, `direccion`, `urbanizacion`, `idDepartamento`, `idProvincia`, `idDistrito`, `email`, `password`, `celular`, `idPuesto`) VALUES
 (1, 'Tatiana', 'Huaman', 'Orlando', '1993-07-12', 'Los jardines 23', 'Casa Blanca', 15, 50, 16, 'tati@gmail.com', '12345', '444888333', 1),
-(2, 'Cecilia', 'Nuñez', 'Cerna', '1987-07-03', 'Av Arequipa 34', 'Los Mangos', 15, 50, 17, 'cecilianunes@gmail.com', '12345', '888777444', 3),
+(2, 'Cecilia', 'NuÃ±ez', 'Cerna', '1987-07-03', 'Av Arequipa 34', 'Los Mangos', 15, 50, 17, 'cecilianunes@gmail.com', '12345', '888777444', 3),
 (3, 'Franceso', 'Rossi', 'Berlusconi', '1950-05-27', 'Calle italia 34', 'Rabiones', 4, 73, 2, 'francesorossi@gmail.com', '12345', '333777555', 2),
 (4, 'Laura', 'Ferrari', 'Brambilla', '2005-07-21', 'Calle las Magnolia 34', 'Los Jazminez azules', 5, 24, 6, 'laura@gmail.com', '12345', '333888555', 2),
 (5, 'Umberto', 'Garcia', 'Abanto', '1979-12-11', 'Los Sauces', 'Miraflores', 20, 68, 36, 'umberto@gmail.com', '12345', '999555999', 4);
@@ -306,14 +307,14 @@ INSERT INTO `provincias` (`idProvincia`, `idDepartamento`, `nombre`) VALUES
 (17, 3, 'Caraveli'),
 (18, 3, 'Castilla'),
 (19, 3, 'Islay'),
-(20, 3, 'La Unión'),
+(20, 3, 'La UniÃ³n'),
 (21, 4, 'Huamanga'),
 (22, 4, 'Huanta'),
 (23, 5, 'Cajabamba'),
 (24, 5, 'Cajamarca'),
 (25, 5, 'Chota'),
 (26, 5, 'Cutervo'),
-(27, 5, 'Jaén'),
+(27, 5, 'JaÃ©n'),
 (28, 7, 'Provincia Const del Callao'),
 (29, 7, 'Callao'),
 (30, 8, 'Cuzco'),
@@ -324,14 +325,14 @@ INSERT INTO `provincias` (`idProvincia`, `idDepartamento`, `nombre`) VALUES
 (35, 9, 'Huancavelica'),
 (36, 9, 'Acotamba'),
 (37, 10, 'Huanuco'),
-(38, 10, 'Marañon'),
+(38, 10, 'MaraÃ±on'),
 (39, 11, 'Ica'),
 (40, 11, 'Chincha'),
 (41, 12, 'Huancayo'),
 (42, 12, 'Chanchamayo'),
 (43, 12, 'Chupaca'),
 (44, 12, 'Jauja'),
-(45, 12, 'Junín'),
+(45, 12, 'JunÃ­n'),
 (46, 13, 'Trujillo'),
 (47, 13, 'Ascope'),
 (48, 14, 'Chiclayo'),
@@ -340,11 +341,11 @@ INSERT INTO `provincias` (`idProvincia`, `idDepartamento`, `nombre`) VALUES
 (51, 15, 'Barranca'),
 (52, 15, 'Cajatambo'),
 (53, 15, 'Canta'),
-(54, 15, 'Cañete'),
+(54, 15, 'CaÃ±ete'),
 (55, 15, 'Huaral'),
 (56, 15, 'Huarochiri'),
 (57, 15, 'Huaura'),
-(58, 15, 'Oyón'),
+(58, 15, 'OyÃ³n'),
 (59, 15, 'Yauyos'),
 (60, 16, 'Loreto'),
 (61, 16, 'Ucayali'),
@@ -357,7 +358,7 @@ INSERT INTO `provincias` (`idProvincia`, `idDepartamento`, `nombre`) VALUES
 (68, 20, 'Piura'),
 (69, 20, 'Ayabaca'),
 (70, 20, 'Huancabamba'),
-(71, 20, 'Morropón'),
+(71, 20, 'MorropÃ³n'),
 (72, 20, 'Paita'),
 (73, 4, 'Arequipa');
 
@@ -378,12 +379,12 @@ CREATE TABLE `puestos` (
 
 INSERT INTO `puestos` (`idPuesto`, `nombre`) VALUES
 (1, 'Contador'),
-(2, 'Diseñador'),
+(2, 'DiseÃ±ador'),
 (3, 'Director'),
 (4, 'Gerente general');
 
 --
--- Índices para tablas volcadas
+-- Ã�ndices para tablas volcadas
 --
 
 --
@@ -574,6 +575,61 @@ ALTER TABLE `pedidos`
 --
 ALTER TABLE `provincias`
   ADD CONSTRAINT `PK_provincia_departamento` FOREIGN KEY (`idDepartamento`) REFERENCES `departamentos` (`idDepartamento`);
+
+-- SP para Alta de ambientes ------------------------------------------------------------
+DELIMITER $$
+create procedure sp_AltaAmbiente(id int, nom varchar(50))
+begin
+insert into ambientes values (id,nom);
+end$$
+delimiter ;
+
+call sp_AltaAmbiente(9, 'prueba');
+select * from ambientes;
+-- ----------------------------------------------------------
+
+  -- SP para modificación de ambientes ------------------------------------------------------------
+DELIMITER $$
+create procedure sp_MantAmbiente(id int, nom varchar(50))
+begin
+update ambientes
+set nombre=nom
+where idAmbiente=id;
+end$$
+delimiter ;
+
+call sp_MantAmbiente(1, 'Baño');
+select * from ambientes;
+-- ----------------------------------------------------------
+
+  -- SP para Eliminar un ambientes ------------------------------------------------------------
+DELIMITER $$
+create procedure sp_DeleteAmbiente(id int)
+begin
+delete from ambientes
+where idAmbiente=id;
+end$$
+delimiter ;
+
+call sp_DeleteAmbiente(9);
+select * from ambientes;
+
+drop procedure sp_DeleteAmbiente;
+-- ----------------------------------------------------------
+
+  -- SP para Listar Ambientes ------------------------------------------------------------
+DELIMITER $$
+create procedure sp_ListAmbiente()
+begin
+select * from ambientes;
+end$$
+delimiter ;
+
+call sp_ListAmbiente();
+select * from ambientes;
+
+-- drop procedure sp_DeleteAmbiente;
+-- ----------------------------------------------------------
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

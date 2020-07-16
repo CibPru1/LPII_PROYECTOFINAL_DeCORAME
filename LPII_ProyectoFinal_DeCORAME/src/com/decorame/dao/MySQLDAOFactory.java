@@ -1,7 +1,9 @@
 package com.decorame.dao;
 
+import com.decorame.interfaces.AmbienteDAO;
 import com.decorame.interfaces.ClienteDAO;
 import com.decorame.interfaces.DistritoDAO;
+import com.decorame.mantenimientos.MYSQLAmbienteDAO;
 import com.decorame.mantenimientos.MySQLClienteDAO;
 import com.decorame.mantenimientos.MySQLDistritoDAO;
 
@@ -22,6 +24,8 @@ public class MySQLDAOFactory extends DAOFactory {
 		return new MySQLClienteDAO();
 	}
 
-
+	public AmbienteDAO getAmbienteDAO() {
+		return new MYSQLAmbienteDAO();
+	}
 
 }

@@ -1,21 +1,23 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
-<html>
+<%@page import="com.decorame.beans.AmbienteDTO"%>
+<%@page import="org.apache.jasper.tagplugins.jstl.core.ForEach"%>
+<%@page import="java.util.ArrayList"%>
+<html lang="esS">
 <head>
-<meta charset="ISO-8859-1">
-<title>DeCORAME - Ingreso</title>
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" 
+	  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <link href="css/estilos2.css" rel="stylesheet">
-
 </head>
-
 <body>
 
-	<div class="container-fluid">
-	
-	 <header>
+<header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <img src="img/Planes/LogoDecorame.png"alt="">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,50 +47,13 @@
                 <button type="button" class="btn btn-outline-success">Decórame</button>
             </div>
         </div>
-    </header>
-			<br>
-			<br>
-			<br>
-			<br>
-		<div id="seccion" style="height: 450px;padding-top:50px;" class="row">
-        	<div class="col-3"></div>
-        	<div class="col-6">
-	        	<form action="ingreso" method="post">
-		            <h2 style="text-align:center;">Bienvenido</h2>
-		            <hr>
-		            <div class="form-group row">
-		            	<div class="col-2"></div>
-		                <label for="txtUsuario" class="col-3 col-form-label margen">Correo</label>
-		                <div class="col-5">
-		                    <input type="text" name="txtUsuario" class="form-control" placeholder="Ingrese correo" required>
-		                </div>
-		                <div class="col-2"></div>
-		            </div>
-		            <div class="form-group row">
-		            	<div class="col-2"></div>
-		                <label for="txtClave" class="col-3 col-form-label margen">Contraseña</label>
-		                <div class="col-5">
-		                    <input type="password" name="txtClave" class="form-control" placeholder="Ingrese contraseña" required>
-		                </div>
-		            </div>
-				    <br>
-				    <br>      		            
-		            <div class="form-group row">
-		                <label class="col-2">&nbsp;</label>
-		                <div class="input-group col-3">
-		                    <button type="submit" class="btn btn-outline-primary tamano">Ingresar</button>
-		                </div>
-		                <div class="col-5">
-		                	<p style="text-align:left;">Eres nuevo? Regístrate <a href="registro.jsp">aquí</a> </p>
-		            	</div>
-		            </div>
-		        </form>
-        	</div>
-        	<div class="col-3">
-        	</div>
-        	<br>
-		</div>
-		<main>		
+</header>
+<br>
+<br>
+<br>
+<br>
+
+			<main>		
 				<section>
 					<figure3>
 						<img src="img/Crud/muchosAmbientes.jpg"alt="">
@@ -97,11 +62,62 @@
 					<br>
 					<br>
 				</section>
-			<br>
-		</main>
-		<br>
+				<br>
+				<br>
+			</main>
+
+	<div class="container" action="ambiente">
+		<h2 style="text-align: center; font-size: 40px;color: green; font-style:italic; text-transform:none;">Listado de Ambientes</h2>
+
+	</div>
+	
+	<div class="container" style="height: 450px;padding-top:50px;" class="row">
+		<table class="table">
+		
+
+			<tr> <%--Cabecera --%>
+				<th></th>
+				<th>IdAmbiente</th>
+				<th>Nombre</th>
+				<th></th>
+				<th></th>
+			</tr>
+
+		<% 
+			//codigo java, captura el listado enviado desde el servlet(como atributo) y mostrarlo
+			ArrayList<AmbienteDTO> lista=(ArrayList<AmbienteDTO>)request.getAttribute("listadito");
 			
-     <footer class="row">
+			//--muestra los datos, si la lista tiene datos
+			if(lista != null){
+				for(AmbienteDTO x: lista){
+				%>
+					
+				<tr class="grilla_campo">
+					<td></td>
+					<td><%=x.getIdAmbiente()  %></td>
+					<td><%=x.getNombre()  %></td>
+					<td></td>					
+					<td></td>
+				</tr>
+		
+				<% 		
+				}
+			}
+		%>
+
+		</table>
+		
+		<a class="btn btn-outline-success" href="CrudServicios.jsp">Regresar</a>
+	</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <footer class="row">
             <div class="col-md-3">
              <br>  <br>  <br>
               
@@ -156,10 +172,8 @@
             </div>
         </footer>
 
-    </div>
-    
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/libreria.js"></script>
+
+
 </body>
 </html>
+

@@ -50,45 +50,7 @@
 			<br>
 			<br>
 			<br>
-		<div id="seccion" style="height: 450px;padding-top:50px;" class="row">
-        	<div class="col-3"></div>
-        	<div class="col-6">
-	        	<form action="ingreso" method="post">
-		            <h2 style="text-align:center;">Bienvenido</h2>
-		            <hr>
-		            <div class="form-group row">
-		            	<div class="col-2"></div>
-		                <label for="txtUsuario" class="col-3 col-form-label margen">Correo</label>
-		                <div class="col-5">
-		                    <input type="text" name="txtUsuario" class="form-control" placeholder="Ingrese correo" required>
-		                </div>
-		                <div class="col-2"></div>
-		            </div>
-		            <div class="form-group row">
-		            	<div class="col-2"></div>
-		                <label for="txtClave" class="col-3 col-form-label margen">Contraseña</label>
-		                <div class="col-5">
-		                    <input type="password" name="txtClave" class="form-control" placeholder="Ingrese contraseña" required>
-		                </div>
-		            </div>
-				    <br>
-				    <br>      		            
-		            <div class="form-group row">
-		                <label class="col-2">&nbsp;</label>
-		                <div class="input-group col-3">
-		                    <button type="submit" class="btn btn-outline-primary tamano">Ingresar</button>
-		                </div>
-		                <div class="col-5">
-		                	<p style="text-align:left;">Eres nuevo? Regístrate <a href="registro.jsp">aquí</a> </p>
-		            	</div>
-		            </div>
-		        </form>
-        	</div>
-        	<div class="col-3">
-        	</div>
-        	<br>
-		</div>
-		<main>		
+			<main>		
 				<section>
 					<figure3>
 						<img src="img/Crud/muchosAmbientes.jpg"alt="">
@@ -97,8 +59,56 @@
 					<br>
 					<br>
 				</section>
+				<br>
+				<br>
+			</main>
+			
+		<div id="seccion" style="height: 450px;padding-top:50px;" class="row">
+        	<div class="col-3"></div>
+        	<div class="col-6">
+	        	<form action="ambiente">
+		            <h2 style="text-align:center;">Mantenimiento de Ambientes</h2>
+		            <hr>
+		            
+					  <div class="form-group row">
+					    <label for="inputIdAmbiente" class="col-sm-2 col-form-label">IdAmbiente</label>
+					    <div class="col-sm-10">
+					      <input type="number" class="form-control" id="IdAmbiente" name= "IdAmbiente">
+					    </div>
+					  </div>
+					  
+					  <div class="form-group row">
+					    <label for="inputAmbiente" class="col-sm-2 col-form-label">Ambiente</label>
+					    <div class="col-sm-10">
+					      <input type="text" class="form-control" id="Ambiente" name= "txtAmbiente">
+					    </div>
+					  </div>
+		            
+				    <br>
+				    <br>      		            
+		            <button type="submit" class="btn btn-outline-primary tamano" 	name="btns" value="r">Registrar</button>
+					<button type="submit" class="btn btn-info" 		name="btns" value="a">Actualizar</button>
+					<button type="submit" class="btn btn-danger" 	name="btns" value="e">Eliminar</button>
+					<button type="submit" class="btn btn-secondary" 	name="btns" value="l">Listar</button>
+		        </form>
+		        	
+		     <br>   	
+			<%-- Muestra el atributo mensaje --%>
+			<p>${mensaje}</p>
+			
 			<br>
-		</main>
+        	</div>
+        	<br>
+			<br>
+			<br>
+			<br>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
 		<br>
 			
      <footer class="row">

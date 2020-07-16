@@ -54,7 +54,7 @@
 			<br>
 			<br>
 			<div>
-				<h1 style="text-align: center; background-color: silver;">Elije tu plan Perfecto</h1>
+				<h1 style="text-align: center; font-size: 50px;color: green; font-style:italic; text-transform:none;">Elije tu plan Perfecto</h1>
 				<p>El diseño es algo muy personal y tu felicidad es importante para nosotros. 
 				Trabajarás con un diseñador de interiores uno a uno, todo online, para crear 
 				el espacio de tus sueños.</p>

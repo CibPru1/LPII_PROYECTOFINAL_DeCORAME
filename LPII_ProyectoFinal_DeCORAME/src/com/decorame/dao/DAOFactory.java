@@ -1,6 +1,7 @@
 package com.decorame.dao;
 
 
+import com.decorame.interfaces.AmbienteDAO;
 import com.decorame.interfaces.ClienteDAO;
 import com.decorame.interfaces.DistritoDAO;
 
@@ -12,6 +13,7 @@ public abstract class DAOFactory {
 	
 	public abstract ClienteDAO getClienteDao();
 	public abstract DistritoDAO getDistritoDAO();
+	public abstract AmbienteDAO getAmbienteDAO();
 	
 	
 	public static DAOFactory getDAOFactory(int qFactory) {
