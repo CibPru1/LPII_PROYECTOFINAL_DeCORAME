@@ -24,11 +24,11 @@ public class UsuarioServlet extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		System.out.println("Ingresando al servlet usuario");
-		// Obtener la opción del botón pulsado
+
 		String opc = request.getParameter("btns");
-		System.out.println("Opción : " + opc);
+		System.out.println("Opcion : " + opc);
 		opc = (opc == null ? "s" : opc); 		
-		// Según la opción seleccionada, realizar
+
 		switch (opc) {
 		case "v": validar(request, response); break;
 		default:
@@ -60,8 +60,8 @@ public class UsuarioServlet extends HttpServlet {
 		if (u != null) {
 			mensaje = "Bienvenido " + u.getNombre();
 			// envia el atributo datos a nivel de session
-			request.getSession().setAttribute("datos", u);
-			url = "principal.jsp";
+			request.getSession().setAttribute("cliente", u);
+			url = "/Servicios.jsp";
 		} else {
 			mensaje = "Usuario o clave incorrecto";
 			url = "login.jsp";

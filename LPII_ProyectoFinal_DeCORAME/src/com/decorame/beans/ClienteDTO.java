@@ -1,7 +1,5 @@
 package com.decorame.beans;
 
-import java.time.LocalDate;
-import java.util.Date;
 
 public class ClienteDTO {
 	
@@ -9,7 +7,7 @@ public class ClienteDTO {
 	private String nombre;
 	private String apePat;
 	private String apeMat;
-	private LocalDate fecNac;
+	private String fecNac;
 	private String direccion;
 	private String urbanizacion;
 	private Integer idDepartamento;
@@ -23,7 +21,7 @@ public class ClienteDTO {
 		
 	}
 
-	public ClienteDTO(Integer idCliente, String nombre, String apePat, String apeMat, LocalDate fecNac, String direccion,
+	public ClienteDTO(Integer idCliente, String nombre, String apePat, String apeMat, String fecNac, String direccion,
 			String urbanizacion, Integer idDepartamento, Integer idProvincia, Integer idDistrito, String email,
 			String password, String celular) {
 		this.idCliente = idCliente;
@@ -40,7 +38,7 @@ public class ClienteDTO {
 		this.password = password;
 		this.celular = celular;
 	}
-	public ClienteDTO(String nombre, String apePat, String apeMat, LocalDate fecNac, String direccion,
+	public ClienteDTO(String nombre, String apePat, String apeMat, String fecNac, String direccion,
 			String urbanizacion, Integer idDepartamento, Integer idProvincia, Integer idDistrito, String email,
 			String password, String celular) {
 		this.nombre = nombre;
@@ -91,11 +89,11 @@ public class ClienteDTO {
 		this.apeMat = apeMat;
 	}
 
-	public LocalDate getFecNac() {
+	public String getFecNac() {
 		return fecNac;
 	}
 
-	public void setFecNac(LocalDate fecNac) {
+	public void setFecNac(String fecNac) {
 		this.fecNac = fecNac;
 	}
 

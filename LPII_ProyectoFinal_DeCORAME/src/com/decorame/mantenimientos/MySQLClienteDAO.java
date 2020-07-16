@@ -7,12 +7,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-
 import com.decorame.beans.ClienteDTO;
 import com.decorame.interfaces.ClienteDAO;
 import com.decorame.utils.MySQLConexion;
 
-public class MySQLClienteDAO implements ClienteDAO {
+public class MySQLClienteDAO implements ClienteDAO{
 
 	@Override
 	public void crear(ClienteDTO t) {
@@ -28,7 +27,7 @@ public class MySQLClienteDAO implements ClienteDAO {
 			preparedStatement.setString(1, t.getNombre());
 			preparedStatement.setString(2, t.getApePat());
 			preparedStatement.setString(3, t.getApeMat());
-			preparedStatement.setObject(4, t.getFecNac());
+			preparedStatement.setString(4, t.getFecNac());
 			preparedStatement.setString(5, t.getDireccion());
 			preparedStatement.setString(6, t.getUrbanizacion());
 			preparedStatement.setInt(7, t.getIdDepartamento());
@@ -65,7 +64,7 @@ public class MySQLClienteDAO implements ClienteDAO {
 			preparedStatement.setString(1, t.getNombre());
 			preparedStatement.setString(2, t.getApePat());
 			preparedStatement.setString(3, t.getApeMat());
-			preparedStatement.setObject(4, t.getFecNac());
+			preparedStatement.setString(4, t.getFecNac());
 			preparedStatement.setString(5, t.getDireccion());
 			preparedStatement.setString(6, t.getUrbanizacion());
 			preparedStatement.setInt(7, t.getIdDepartamento());
@@ -129,7 +128,8 @@ public class MySQLClienteDAO implements ClienteDAO {
 				cliente.setNombre(resultSet.getString(2));
 				cliente.setApePat(resultSet.getString(3));
 				cliente.setApeMat(resultSet.getString(4));
-				cliente.setFecNac((resultSet.getTimestamp(5).toLocalDateTime()).toLocalDate());
+				cliente.setFecNac(resultSet.getString(5));							
+				//cliente.setFecNac((resultSet.getTimestamp(5).toLocalDateTime()).toLocalDate());
 				cliente.setDireccion(resultSet.getString(6));
 				cliente.setUrbanizacion(resultSet.getString(7));
 				cliente.setIdDepartamento(resultSet.getInt(8));
@@ -184,7 +184,8 @@ public class MySQLClienteDAO implements ClienteDAO {
 				u.setNombre(rs.getString(2));
 				u.setApePat(rs.getString(3));
 				u.setApeMat(rs.getString(4));
-				u.setFecNac((rs.getTimestamp(5).toLocalDateTime()).toLocalDate());
+				u.setFecNac(rs.getString(5));
+				//u.setFecNac((rs.getTimestamp(5).toLocalDateTime()).toLocalDate());
 				u.setDireccion(rs.getString(6));
 				u.setUrbanizacion(rs.getString(7));
 				u.setIdDepartamento(rs.getInt(8));

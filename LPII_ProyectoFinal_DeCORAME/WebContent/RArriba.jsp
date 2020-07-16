@@ -154,7 +154,7 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 				</ul>
             </div>
             <div class="col-2">
-                <button type="button" class="btn btn-outline-success">Decórame</button>
+                <button type="button" class="btn btn-outline-success"><a href="cli_serv?btns=m_f_r">Regístrate</a></button>
             </div>
         </div>
     </header>

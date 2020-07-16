@@ -44,10 +44,10 @@ public class Prueba01 {
 
 	//ELIMINAR
 	
-	ClienteDAO cliente = factory.getClienteDao();
-	cliente.eliminar(2);
-	List<ClienteDTO> cli = cliente.listar();
-	cli.forEach(System.out::println);
+//	ClienteDAO cliente = factory.getClienteDao();
+//	cliente.eliminar(2);
+//	List<ClienteDTO> cli = cliente.listar();
+//	cli.forEach(System.out::println);
 	
 	}
 }

@@ -53,7 +53,7 @@
 		<div id="seccion" style="height: 450px;padding-top:50px;" class="row">
         	<div class="col-3"></div>
         	<div class="col-6">
-	        	<form action="ingreso" method="post">
+	        	<form action="usuario" method="post">
 		            <h2 style="text-align:center;">Bienvenido</h2>
 		            <hr>
 		            <div class="form-group row">
@@ -76,10 +76,11 @@
 		            <div class="form-group row">
 		                <label class="col-2">&nbsp;</label>
 		                <div class="input-group col-3">
-		                    <button type="submit" class="btn btn-outline-primary tamano">Ingresar</button>
+		                    <button type="submit" class="btn btn-outline-primary tamano" name="btns" value="v">Ingresar</button>
 		                </div>
 		                <div class="col-5">
-		                	<p style="text-align:left;">Eres nuevo? Regístrate <a href="registro.jsp">aquí</a> </p>
+
+		                	<p style="text-align:left;">Eres nuevo? Regístrate<a href="cli_serv?btns=m_f_r">aquí</a></p>
 		            	</div>
 		            </div>
 		        </form>
