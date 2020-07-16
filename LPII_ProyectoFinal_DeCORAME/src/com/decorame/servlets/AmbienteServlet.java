@@ -67,9 +67,40 @@ public class AmbienteServlet extends HttpServlet {
 		
 	}
 
-	private void eliminar(HttpServletRequest request, HttpServletResponse response) {
-		// TODO Auto-generated method stub
+	private void eliminar(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("Entro al actualizar Ambiente");
+		//variables
+		int id;
+		String mensaje;
+		String url;
 		
+		//entrada de datos
+		id=Integer.parseInt(request.getParameter("IdAmbiente"));
+
+		
+		//comprobación
+		AmbienteDTO a = new AmbienteDTO();
+		a.setIdAmbiente(id);
+		System.out.println(a);
+		
+		//procesos
+		//--MySQLProductoDAO gp = new MySQLProductoDAO();
+		DAOFactory fabrica = DAOFactory.getDAOFactory(DAOFactory.MYSQL);
+		AmbienteDAO dao = fabrica.getAmbienteDAO();
+		
+		
+		int ok=dao.eliminarAmb(id);
+		if(ok==0) {
+			mensaje="Producto no pudo ser ELIMINADO";
+			url="/CrudServicios.jsp";
+		}else {
+			mensaje="Producto ELIMINADO";
+			url="/CrudServicios.jsp";
+		}
+
+		//salida
+		request.setAttribute("mensaje", mensaje);
+		request.getRequestDispatcher(url).forward(request, response);
 	}
 
 	private void actualizar(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

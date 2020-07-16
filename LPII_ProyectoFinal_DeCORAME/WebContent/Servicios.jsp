@@ -11,7 +11,7 @@
 <br>
 <br>
 <body>
-<p>aca</p>
+<p></p>
 			<% String msjCli = (String)request.getAttribute("mensaje"); 
 				if(msjCli != null){
 			%>

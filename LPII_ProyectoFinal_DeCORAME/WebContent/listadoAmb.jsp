@@ -17,7 +17,7 @@
 </head>
 <body>
 
-<header>
+	 <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <img src="img/Planes/LogoDecorame.png"alt="">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="col-8">
-                <ul class="nav flex-column">
+            	<ul class="nav nav-pills nav-fill">
 				  <li class="nav-item">
 				    <a class="nav-link" href="Index.jsp">Conócenos</a>
 				  </li>
@@ -47,7 +47,7 @@
                 <button type="button" class="btn btn-outline-success">Decórame</button>
             </div>
         </div>
-</header>
+    </header>
 <br>
 <br>
 <br>
