@@ -1,8 +1,10 @@
 package com.decorame.interfaces;
 
 import com.decorame.beans.ClienteDTO;
-import com.decorame.beans.DistritoDTO;
 
-public interface ClienteDAO extends EntidadDao<ClienteDTO, Integer>{
+public interface ClienteDAO extends EntidadDao<ClienteDTO, Integer> {
+	
+	// validar el ingreso del cliente
+	public ClienteDTO validar(String usuario, String clave);
 
 }

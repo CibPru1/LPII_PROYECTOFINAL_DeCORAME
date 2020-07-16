@@ -12,7 +12,7 @@ import com.decorame.beans.ClienteDTO;
 import com.decorame.interfaces.ClienteDAO;
 import com.decorame.utils.MySQLConexion;
 
-public class MySQLClienteDAO implements ClienteDAO{
+public class MySQLClienteDAO implements ClienteDAO {
 
 	@Override
 	public void crear(ClienteDTO t) {
@@ -156,6 +156,51 @@ public class MySQLClienteDAO implements ClienteDAO{
 		Optional<ClienteDTO> cli = listar().stream().filter(x -> x.getIdCliente() == v).findFirst();
 		cliente = cli.isPresent()?cli.get(): new ClienteDTO();
 		return cliente;
+	}
+
+	@Override
+	public ClienteDTO validar(String usuario, String clave) {
+		// TODO Auto-generated method stub
+		ClienteDTO u = null;
+		Connection con = null;
+		PreparedStatement pst = null;
+		ResultSet rs = null;
+		
+		String instrSelect= "select * from clientes where email = ? and password = ?";
+		
+		try {
+			con = MySQLConexion.getConnection();			
+			pst = con.prepareStatement(instrSelect);
+			pst.setString(1, usuario);
+			pst.setString(2, clave);
+			
+			// ejecutamos la sentencia y guardamos el resultado
+			rs = pst.executeQuery();
+			
+			// pasar los datos del rs, a la lista
+			if (rs.next()) {
+				u = new ClienteDTO();
+				u.setIdCliente(rs.getInt(1));
+				u.setNombre(rs.getString(2));
+				u.setApePat(rs.getString(3));
+				u.setApeMat(rs.getString(4));
+				u.setFecNac((rs.getTimestamp(5).toLocalDateTime()).toLocalDate());
+				u.setDireccion(rs.getString(6));
+				u.setUrbanizacion(rs.getString(7));
+				u.setIdDepartamento(rs.getInt(8));
+				u.setIdProvincia(rs.getInt(9));
+				u.setIdDistrito(rs.getInt(10));
+				u.setEmail(rs.getString(11));
+				u.setPassword(rs.getString(12));
+				u.setCelular(rs.getString(13));
+			}
+		} catch (Exception e) {
+			System.out.println("Error al validar usuario: " + e.getMessage());
+		} finally {
+			MySQLConexion.closeConexion(con);
+		}
+		
+		return u;
 	}
 
 }

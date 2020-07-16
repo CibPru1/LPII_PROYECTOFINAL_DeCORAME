@@ -7,6 +7,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.decorame.beans.ClienteDTO;
+import com.decorame.dao.DAOFactory;
+import com.decorame.interfaces.ClienteDAO;
+
 /**
  * Servlet implementation class UsuarioServlet
  */
@@ -19,6 +23,53 @@ public class UsuarioServlet extends HttpServlet {
 	 */
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		System.out.println("Ingresando al servlet usuario");
+		// Obtener la opción del botón pulsado
+		String opc = request.getParameter("btns");
+		System.out.println("Opción : " + opc);
+		opc = (opc == null ? "s" : opc); 		
+		// Según la opción seleccionada, realizar
+		switch (opc) {
+		case "v": validar(request, response); break;
+		default:
+			request.getSession().invalidate();
+			request.getRequestDispatcher("/login.jsp").forward(request, response);
+		}
+	}
+	
+	private void validar(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// variables
+		String usuario, clave;
+		String url; 
+		String mensaje; 
+
+		// entradas
+		usuario = request.getParameter("txtUsuario");
+		clave = request.getParameter("txtClave");
+		System.out.println(usuario + "-" + clave);
+
+		// procesos
+		DAOFactory fabrica = DAOFactory.getDAOFactory(DAOFactory.MYSQL);
+		ClienteDAO dao = fabrica.getClienteDao();
+		
+		ClienteDTO u = dao.validar(usuario, clave);
+		
+		// muestra la session actual
+		System.out.println("Session ID : " + request.getSession().getId());
+		
+		if (u != null) {
+			mensaje = "Bienvenido " + u.getNombre();
+			// envia el atributo datos a nivel de session
+			request.getSession().setAttribute("datos", u);
+			url = "principal.jsp";
+		} else {
+			mensaje = "Usuario o clave incorrecto";
+			url = "login.jsp";
+		}
+
+		// salidas
+		request.setAttribute("mensaje", mensaje);
+		request.getRequestDispatcher(url).forward(request, response);
 	}
  
 }
