@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 15-07-2020 a las 01:15:44
+-- Tiempo de generación: 15-07-2020 a las 19:12:58
 -- Versión del servidor: 5.7.30-0ubuntu0.18.04.1
 -- Versión de PHP: 7.2.24-0ubuntu0.18.04.6
 
@@ -19,6 +19,9 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `lp2_db_decorame`
 --
+create database lp2_db_decorame;
+
+use lp2_db_decorame
 
 -- --------------------------------------------------------
 
@@ -30,6 +33,20 @@ CREATE TABLE `ambientes` (
   `idAmbiente` int(11) NOT NULL,
   `nombre` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `ambientes`
+--
+
+INSERT INTO `ambientes` (`idAmbiente`, `nombre`) VALUES
+(1, 'Cocina'),
+(2, 'Cocina'),
+(3, 'Dormitorio'),
+(4, 'Walk in close'),
+(5, 'Sala'),
+(6, 'Oficina'),
+(7, 'Sala de juegos'),
+(8, 'Cochera');
 
 -- --------------------------------------------------------
 
@@ -64,6 +81,16 @@ CREATE TABLE `clientes` (
   `password` varchar(50) NOT NULL,
   `celular` char(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `clientes`
+--
+
+INSERT INTO `clientes` (`idCliente`, `nombre`, `apePat`, `apeMat`, `fecNac`, `direccion`, `urbanizacion`, `idDepartamento`, `idProvincia`, `idDistrito`, `email`, `password`, `celular`) VALUES
+(1, 'Liseth', 'Suarez', 'Montilla', '2000-06-23', 'Los Sauces 23', ' Las Viñas', 15, 50, 18, 'li12341@gmail.com', '12345', '999888777'),
+(3, 'Francisco', 'Matos', 'Lopez', '1989-07-10', 'Los Sauces 345', 'Girasol', 15, 50, 15, 'francis@gmail.com', '12345', '999777666'),
+(4, 'Dina', 'Yauyos', 'Suarez', '1995-07-13', 'Mz 2 lote 87 Grupo 4', 'Camino azul', 15, 50, 16, 'dina@gmail.com', '12345', '999555333'),
+(5, 'Josue', 'Encias', 'Guerra', '1965-07-03', 'Mz 23 lote 8', 'Porton ', 8, 30, 11, 'encias@gmail.com', '12345', '888555444');
 
 -- --------------------------------------------------------
 
@@ -187,7 +214,7 @@ CREATE TABLE `empleados` (
   `apeMat` varchar(50) NOT NULL,
   `fecNac` date NOT NULL,
   `direccion` varchar(90) NOT NULL,
-  `urbanizacion` int(20) NOT NULL,
+  `urbanizacion` varchar(45) NOT NULL,
   `idDepartamento` int(11) NOT NULL,
   `idProvincia` int(11) NOT NULL,
   `idDistrito` int(11) NOT NULL,
@@ -196,6 +223,17 @@ CREATE TABLE `empleados` (
   `celular` char(11) NOT NULL,
   `idPuesto` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `empleados`
+--
+
+INSERT INTO `empleados` (`idEmpleado`, `nombre`, `apePat`, `apeMat`, `fecNac`, `direccion`, `urbanizacion`, `idDepartamento`, `idProvincia`, `idDistrito`, `email`, `password`, `celular`, `idPuesto`) VALUES
+(1, 'Tatiana', 'Huaman', 'Orlando', '1993-07-12', 'Los jardines 23', 'Casa Blanca', 15, 50, 16, 'tati@gmail.com', '12345', '444888333', 1),
+(2, 'Cecilia', 'Nuñez', 'Cerna', '1987-07-03', 'Av Arequipa 34', 'Los Mangos', 15, 50, 17, 'cecilianunes@gmail.com', '12345', '888777444', 3),
+(3, 'Franceso', 'Rossi', 'Berlusconi', '1950-05-27', 'Calle italia 34', 'Rabiones', 4, 73, 2, 'francesorossi@gmail.com', '12345', '333777555', 2),
+(4, 'Laura', 'Ferrari', 'Brambilla', '2005-07-21', 'Calle las Magnolia 34', 'Los Jazminez azules', 5, 24, 6, 'laura@gmail.com', '12345', '333888555', 2),
+(5, 'Umberto', 'Garcia', 'Abanto', '1979-12-11', 'Los Sauces', 'Miraflores', 20, 68, 36, 'umberto@gmail.com', '12345', '999555999', 4);
 
 -- --------------------------------------------------------
 
@@ -207,6 +245,15 @@ CREATE TABLE `estados` (
   `idEstado` int(11) NOT NULL,
   `nombre` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `estados`
+--
+
+INSERT INTO `estados` (`idEstado`, `nombre`) VALUES
+(1, 'registrado'),
+(2, 'pagado'),
+(3, 'despachado');
 
 -- --------------------------------------------------------
 
@@ -326,6 +373,16 @@ CREATE TABLE `puestos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
+-- Volcado de datos para la tabla `puestos`
+--
+
+INSERT INTO `puestos` (`idPuesto`, `nombre`) VALUES
+(1, 'Contador'),
+(2, 'Diseñador'),
+(3, 'Director'),
+(4, 'Gerente general');
+
+--
 -- Índices para tablas volcadas
 --
 
@@ -418,7 +475,7 @@ ALTER TABLE `puestos`
 -- AUTO_INCREMENT de la tabla `ambientes`
 --
 ALTER TABLE `ambientes`
-  MODIFY `idAmbiente` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idAmbiente` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT de la tabla `asesoramientos`
 --
@@ -428,7 +485,7 @@ ALTER TABLE `asesoramientos`
 -- AUTO_INCREMENT de la tabla `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `idCliente` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idCliente` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT de la tabla `departamentos`
 --
@@ -448,12 +505,12 @@ ALTER TABLE `distrito`
 -- AUTO_INCREMENT de la tabla `empleados`
 --
 ALTER TABLE `empleados`
-  MODIFY `idEmpleado` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idEmpleado` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT de la tabla `estados`
 --
 ALTER TABLE `estados`
-  MODIFY `idEstado` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idEstado` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT de la tabla `pedidos`
 --
@@ -468,7 +525,7 @@ ALTER TABLE `provincias`
 -- AUTO_INCREMENT de la tabla `puestos`
 --
 ALTER TABLE `puestos`
-  MODIFY `idPuesto` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idPuesto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- Restricciones para tablas volcadas
 --

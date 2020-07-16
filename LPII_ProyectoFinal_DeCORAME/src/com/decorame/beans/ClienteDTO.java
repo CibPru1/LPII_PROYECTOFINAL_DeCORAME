@@ -1,5 +1,6 @@
 package com.decorame.beans;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class ClienteDTO {
@@ -8,11 +9,8 @@ public class ClienteDTO {
 	private String nombre;
 	private String apePat;
 	private String apeMat;
-	private Date fecNac;
+	private LocalDate fecNac;
 	private String direccion;
-	private String calle;
-	private String numeroCalle;
-	private String numeroDepartamento;
 	private String urbanizacion;
 	private Integer idDepartamento;
 	private Integer idProvincia;
@@ -24,6 +22,42 @@ public class ClienteDTO {
 	public ClienteDTO() {
 		
 	}
+
+	public ClienteDTO(Integer idCliente, String nombre, String apePat, String apeMat, LocalDate fecNac, String direccion,
+			String urbanizacion, Integer idDepartamento, Integer idProvincia, Integer idDistrito, String email,
+			String password, String celular) {
+		this.idCliente = idCliente;
+		this.nombre = nombre;
+		this.apePat = apePat;
+		this.apeMat = apeMat;
+		this.fecNac = fecNac;
+		this.direccion = direccion;
+		this.urbanizacion = urbanizacion;
+		this.idDepartamento = idDepartamento;
+		this.idProvincia = idProvincia;
+		this.idDistrito = idDistrito;
+		this.email = email;
+		this.password = password;
+		this.celular = celular;
+	}
+	public ClienteDTO(String nombre, String apePat, String apeMat, LocalDate fecNac, String direccion,
+			String urbanizacion, Integer idDepartamento, Integer idProvincia, Integer idDistrito, String email,
+			String password, String celular) {
+		this.nombre = nombre;
+		this.apePat = apePat;
+		this.apeMat = apeMat;
+		this.fecNac = fecNac;
+		this.direccion = direccion;
+		this.urbanizacion = urbanizacion;
+		this.idDepartamento = idDepartamento;
+		this.idProvincia = idProvincia;
+		this.idDistrito = idDistrito;
+		this.email = email;
+		this.password = password;
+		this.celular = celular;
+	}
+
+
 
 	public Integer getIdCliente() {
 		return idCliente;
@@ -57,11 +91,11 @@ public class ClienteDTO {
 		this.apeMat = apeMat;
 	}
 
-	public Date getFecNac() {
+	public LocalDate getFecNac() {
 		return fecNac;
 	}
 
-	public void setFecNac(Date fecNac) {
+	public void setFecNac(LocalDate fecNac) {
 		this.fecNac = fecNac;
 	}
 
@@ -71,30 +105,6 @@ public class ClienteDTO {
 
 	public void setDireccion(String direccion) {
 		this.direccion = direccion;
-	}
-
-	public String getCalle() {
-		return calle;
-	}
-
-	public void setCalle(String calle) {
-		this.calle = calle;
-	}
-
-	public String getNumeroCalle() {
-		return numeroCalle;
-	}
-
-	public void setNumeroCalle(String numeroCalle) {
-		this.numeroCalle = numeroCalle;
-	}
-
-	public String getNumeroDepartamento() {
-		return numeroDepartamento;
-	}
-
-	public void setNumeroDepartamento(String numeroDepartamento) {
-		this.numeroDepartamento = numeroDepartamento;
 	}
 
 	public String getUrbanizacion() {
@@ -156,10 +166,11 @@ public class ClienteDTO {
 	@Override
 	public String toString() {
 		return "ClienteDTO [idCliente=" + idCliente + ", nombre=" + nombre + ", apePat=" + apePat + ", apeMat=" + apeMat
-				+ ", fecNac=" + fecNac + ", direccion=" + direccion + ", calle=" + calle + ", numeroCalle="
-				+ numeroCalle + ", numeroDepartamento=" + numeroDepartamento + ", urbanizacion=" + urbanizacion
+				+ ", fecNac=" + fecNac + ", direccion=" + direccion + ", urbanizacion=" + urbanizacion
 				+ ", idDepartamento=" + idDepartamento + ", idProvincia=" + idProvincia + ", idDistrito=" + idDistrito
 				+ ", email=" + email + ", password=" + password + ", celular=" + celular + "]";
 	}
+
+
 
 }

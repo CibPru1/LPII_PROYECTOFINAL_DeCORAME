@@ -10,8 +10,6 @@ public class EmpleadoDTO {
 	private String apeMat;
 	private Date fecNac;
 	private String direccion;
-	private String numCalle;
-	private String numDepartamento;
 	private String urbanizacion;
 	private Integer idDepartamento;
 	private Integer idProvincia;
@@ -24,6 +22,27 @@ public class EmpleadoDTO {
 	public EmpleadoDTO() {
 
 	}
+
+	public EmpleadoDTO(Integer idEmpleado, String nombre, String apePat, String apeMat, Date fecNac, String direccion,
+			String urbanizacion, Integer idDepartamento, Integer idProvincia, Integer idDistrito, String email,
+			String password, String celular, Integer idPuesto) {
+		this.idEmpleado = idEmpleado;
+		this.nombre = nombre;
+		this.apePat = apePat;
+		this.apeMat = apeMat;
+		this.fecNac = fecNac;
+		this.direccion = direccion;
+		this.urbanizacion = urbanizacion;
+		this.idDepartamento = idDepartamento;
+		this.idProvincia = idProvincia;
+		this.idDistrito = idDistrito;
+		this.email = email;
+		this.password = password;
+		this.celular = celular;
+		this.idPuesto = idPuesto;
+	}
+
+
 
 	public Integer getIdEmpleado() {
 		return idEmpleado;
@@ -71,22 +90,6 @@ public class EmpleadoDTO {
 
 	public void setDireccion(String direccion) {
 		this.direccion = direccion;
-	}
-
-	public String getNumCalle() {
-		return numCalle;
-	}
-
-	public void setNumCalle(String numCalle) {
-		this.numCalle = numCalle;
-	}
-
-	public String getNumDepartamento() {
-		return numDepartamento;
-	}
-
-	public void setNumDepartamento(String numDepartamento) {
-		this.numDepartamento = numDepartamento;
 	}
 
 	public String getUrbanizacion() {
@@ -156,10 +159,12 @@ public class EmpleadoDTO {
 	@Override
 	public String toString() {
 		return "EmpleadoDTO [idEmpleado=" + idEmpleado + ", nombre=" + nombre + ", apePat=" + apePat + ", apeMat="
-				+ apeMat + ", fecNac=" + fecNac + ", direccion=" + direccion + ", numCalle=" + numCalle
-				+ ", numDepartamento=" + numDepartamento + ", urbanizacion=" + urbanizacion + ", idDepartamento="
-				+ idDepartamento + ", idProvincia=" + idProvincia + ", idDistrito=" + idDistrito + ", email=" + email
-				+ ", password=" + password + ", celular=" + celular + ", idPuesto=" + idPuesto + "]";
+				+ apeMat + ", fecNac=" + fecNac + ", direccion=" + direccion + ", urbanizacion=" + urbanizacion
+				+ ", idDepartamento=" + idDepartamento + ", idProvincia=" + idProvincia + ", idDistrito=" + idDistrito
+				+ ", email=" + email + ", password=" + password + ", celular=" + celular + ", idPuesto=" + idPuesto
+				+ "]";
 	}
+
+
 
 }
