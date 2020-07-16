@@ -13,36 +13,40 @@
 </head>
 <body>
     <hr class="featurette-divider">
-	     <footer class="row">
-    
+	     <br>
+	<br>
+			
+     <footer class="row">
             <div class="col-md-3">
              <br>  <br>  <br>
-               <p style="background-color:Gray; color:white;font-family:courier; font-size:200%; text-align:center;">DeCORAME</p>
+              
+               <img src="img/Planes/LogoDecorame.png" alt="Facebook">
             </div>
 			<div class="col-md-4">
                 <ul class="nav flex-column">
 				  <li class="nav-item">
-				    <a class="nav-link" href="#">Conócenos</a>
+				    <a class="nav-link" href="Index.jsp">Conócenos</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link" href="#">¿Sabes como decorarme?</a>
+				    <a class="nav-link" href="Test.jsp">¿Sabes como decorarme?</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link" href="#">Servicios</a>
+				    <a class="nav-link" href="Planes.jsp">Servicios</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link" href="#">Clientes</a>
+				    <a class="nav-link" href="RegUsuario.jsp">Clientes</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link" href="#">Contáctenos</a>
+				    <a class="nav-link" href="Contacte.jsp">Contáctenos</a>
 				  </li>
 				</ul>
             </div>
             <div class="col-md-2">
             	<div class="row">
             		<div class="col-md-12">
-            			<button type="button" class="btn btn-success" > Decórame</button>
+            			<button type="button" class="btn btn-success" >  Decórame</button>
             		</div>
+            		<br>
             		<br>
             		<div class="col-md-12">
 	            		<p class="blockquote-footer">Cuentanos tu proyecto y juntos
@@ -50,19 +54,23 @@
             		</div>
             	</div>
             </div>
-         <div class="col-md-2">
+             <div class="col-md-2">
             	<div class="row">
             		<div class="col-md-12">
-            			<input type="button" >Siguenos en Redes</input>
+            			<button type="button" class="btn btn-success" disabled>Síguenos en:</button>
             		</div>
+            		<br>
+            		<br>
             		<div class="col-md-12 redes">
+            			<img src="img/facebook.png" alt="Facebook">
 	            		<img src="img/youtube.png" alt="Youtube">
 		                <img src="img/twitter.png" alt="Twitter">
-		                <img src="img/facebook.png" alt="Facebook">
+
             		</div>
             	</div>
             </div>
         </footer>
+
      	 
 	
 </body>

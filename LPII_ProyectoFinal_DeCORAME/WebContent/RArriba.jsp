@@ -129,34 +129,35 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 
 	 <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <img src="img/Planes/LogoDecorame.png"alt="">
+       <img   width="200" height="70"src="img/Planes/LogoDecorame.png"alt="">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="col-8">
+             <div class="col-8">
             	<ul class="nav nav-pills nav-fill">
-				  <li class="nav-item">
-				    <a class="nav-link" href="#">Conócenos</a>
+				  <li class="nav-item" style=" text-align: right;">
+				    <a class="nav-link"  style=" text-align:left; font-size:14px;color: green;text-transform:none; margin:auto 10% auto 20%; font-family:verdana;"href="#">Conócenos</a>
 				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link" href="#">¿Sabes como decorarme?</a>
+				  <li class="nav-item" style=" text-align: right;">
+				    <a class="nav-link" style=" text-align:center; font-size: 15px;color: green;text-transform:none; margin:auto 10% auto 20%; font-family:verdana;" href="#">¿Sabes como decorarme?</a>
 				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link" href="#">Servicios</a>
+				  <li class="nav-item" style=" text-align: right;">
+				    <a class="nav-link"  style="text-align: left; font-size:15px;color: green;text-transform:none; margin:auto 10% auto 20%; font-family:verdana;"href="#">Servicios</a>
 				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link" href="#">Clientes</a>
+				  <li class="nav-item" style=" text-align: right;">
+				    <a class="nav-link" style="text-align:left; font-size:15px;color: green;text-transform:none; margin:auto 10% auto 20%;font-family:verdana;"  href="#">Clientes</a>
 				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link" href="#">Contáctenos</a>
+				  <li class="nav-item" style=" text-align: right;">
+				    <a class="nav-link"  style=" text-align:left; font-size:15px;color: green;text-transform:none; margin:auto 10% auto 20%;font-family:verdana;" href="#">Contáctenos</a>
 				  </li>
+				  <li  class="btn " style=" text-align: right;"> 
+				  <button type="button"  class="btn btn-warning" style=" text-align: right; font-size:15px; height:30px; position:relative;top:-2%; left:100%;"><a href="cli_serv?btns=m_f_r">Regístrate</a>
+				</button>
 				</ul>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-outline-success"><a href="cli_serv?btns=m_f_r">Regístrate</a></button>
-            </div>
+				</div>
         </div>
+        </nav>
     </header>
 
 </body>
