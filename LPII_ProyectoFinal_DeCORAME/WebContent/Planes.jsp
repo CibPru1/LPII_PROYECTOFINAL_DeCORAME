@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+Servicios.jsp<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -31,10 +31,10 @@
 				    <a class="nav-link" href="Test.jsp">¿Sabes como decorarme?</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link" href="Planes.jsp">Servicios</a>
+				    <a class="nav-link" href="Servicios.jsp">Servicios</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link" href="RegUsuario.jsp">Clientes</a>
+				    <a class="nav-link" href="login.jsp">Clientes</a>
 				  </li>
 				  <li class="nav-item">
 				    <a class="nav-link" href="Contacte.jsp">Contáctenos</a>
@@ -73,7 +73,7 @@
 	            	<li>Hasta 3 revisiones</li>
 	            	<li>Asistencia 2 semanas post diseño </li>
 	            </ul>
-	             <p><a class="btn btn-outline-success" href="Test.jsp" role="button">Comprar</a></p>
+	             <p><a class="btn btn-outline-success" href="carrocompras.jsp" role="button">Comprar</a></p>
 			</figure>
 			<figure>
 				<img src="img/Planes/PlanFull.jpg"alt="">
@@ -91,7 +91,7 @@
 	            	<li>Revisiones ilimitadas </li>
 	            	<li> Asistencia 4 semanas post diseño</li>
 	            </ul>
-	             <p><a type="button" class="btn btn-outline-success" href="Test.jsp" role="button">Comprar</a></p>
+	             <p><a type="button" class="btn btn-outline-success" href="carrocompras.jsp" role="button">Comprar</a></p>
 			</figure>
 		</section>
 		<br>
@@ -116,10 +116,10 @@
 				    <a class="nav-link" href="Test.jsp">¿Sabes como decorarme?</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link" href="Planes.jsp">Servicios</a>
+				    <a class="nav-link" href="Servicios.jsp">Servicios</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link" href="RegUsuario.jsp">Clientes</a>
+				    <a class="nav-link" href="login.jsp">Clientes</a>
 				  </li>
 				  <li class="nav-item">
 				    <a class="nav-link" href="Contacte.jsp">Contáctenos</a>

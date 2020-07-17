@@ -66,10 +66,15 @@
     <td> 50.00 </td>
     </tr>
     </thead>
+    <br>
+    <br>
 </table>
 </div>
 </div>
-
+		<br>
+				<br>
+						<br>
+		<p>Ir a mantenimiento de Ambientes <a href="CrudServicios.jsp">aquí</a></p>
 </div>
 	<br>
 	<br><br>

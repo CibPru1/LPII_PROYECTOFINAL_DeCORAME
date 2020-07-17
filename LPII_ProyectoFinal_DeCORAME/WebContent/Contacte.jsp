@@ -31,10 +31,10 @@
 				    <a class="nav-link" href="Test.jsp">¿Sabes como decorarme?</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link" href="Planes.jsp">Servicios</a>
+				    <a class="nav-link" href="Servicios.jsp">Servicios</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link" href="RegUsuario.jsp">Clientes</a>
+				    <a class="nav-link" href="login.jsp">Clientes</a>
 				  </li>
 				  <li class="nav-item">
 				    <a class="nav-link" href="Contacte.jsp">Contáctenos</a>
@@ -87,10 +87,10 @@
 				    <a class="nav-link" href="Test.jsp">¿Sabes como decorarme?</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link" href="Planes.jsp">Servicios</a>
+				    <a class="nav-link" href="Servicios.jsp">Servicios</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link" href="RegUsuario.jsp">Clientes</a>
+				    <a class="nav-link" href="login.jsp">Clientes</a>
 				  </li>
 				  <li class="nav-item">
 				    <a class="nav-link" href="Contacte.jsp">Contáctenos</a>

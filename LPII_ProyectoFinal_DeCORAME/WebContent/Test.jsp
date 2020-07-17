@@ -30,19 +30,19 @@ function pregunta(){
              <div class="col-8">
             	<ul class="nav nav-pills nav-fill">
 				  <li class="nav-item" style=" text-align: right;">
-				    <a class="nav-link"  style=" text-align:left; font-size:14px;color: green;text-transform:none; margin:auto 10% auto 20%; font-family:verdana;"href="#">Conócenos</a>
+				    <a class="nav-link"  style=" text-align:left; font-size:14px;color: green;text-transform:none; margin:auto 10% auto 20%; font-family:verdana;"href="Index.jsp">Conócenos</a>
 				  </li>
 				  <li class="nav-item" style=" text-align: right;">
-				    <a class="nav-link" style=" text-align:center; font-size: 15px;color: green;text-transform:none; margin:auto 10% auto 20%; font-family:verdana;" href="#">¿Sabes como decorarme?</a>
+				    <a class="nav-link" style=" text-align:center; font-size: 15px;color: green;text-transform:none; margin:auto 10% auto 20%; font-family:verdana;" href="Test.jsp">¿Sabes como decorarme?</a>
 				  </li>
 				  <li class="nav-item" style=" text-align: right;">
-				    <a class="nav-link"  style="text-align: left; font-size:15px;color: green;text-transform:none; margin:auto 10% auto 20%; font-family:verdana;"href="#">Servicios</a>
+				    <a class="nav-link"  style="text-align: left; font-size:15px;color: green;text-transform:none; margin:auto 10% auto 20%; font-family:verdana;"href="Servicios.jsp">Servicios</a>
 				  </li>
 				  <li class="nav-item" style=" text-align: right;">
-				    <a class="nav-link" style="text-align:left; font-size:15px;color: green;text-transform:none; margin:auto 10% auto 20%;font-family:verdana;"  href="#">Clientes</a>
+				    <a class="nav-link" style="text-align:left; font-size:15px;color: green;text-transform:none; margin:auto 10% auto 20%;font-family:verdana;"  href="login.jsp">Clientes</a>
 				  </li>
 				  <li class="nav-item" style=" text-align: right;">
-				    <a class="nav-link"  style=" text-align:left; font-size:15px;color: green;text-transform:none; margin:auto 10% auto 20%;font-family:verdana;" href="#">Contáctenos</a>
+				    <a class="nav-link"  style=" text-align:left; font-size:15px;color: green;text-transform:none; margin:auto 10% auto 20%;font-family:verdana;" href="Contacte.jsp">Contáctenos</a>
 				  </li>
 				  <li  class="btn " style=" text-align: right;"> 
 				  <button type="button"  class="btn btn-warning" style=" text-align: right; font-size:15px; height:30px; position:relative;top:-2%; left:100%;"><a href="cli_serv?btns=m_f_r">Regístrate</a>
@@ -136,7 +136,7 @@ function pregunta(){
 				    <a class="nav-link" href="Planes.jsp">Servicios</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link" href="RegUsuario.jsp">Clientes</a>
+				    <a class="nav-link" href="login.jsp">Clientes</a>
 				  </li>
 				  <li class="nav-item">
 				    <a class="nav-link" href="Contacte.jsp">Contáctenos</a>
