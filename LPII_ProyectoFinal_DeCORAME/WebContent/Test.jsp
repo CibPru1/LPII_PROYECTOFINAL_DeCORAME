@@ -45,7 +45,9 @@ function pregunta(){
 				    <a class="nav-link"  style=" text-align:left; font-size:15px;color: green;text-transform:none; margin:auto 10% auto 20%;font-family:verdana;" href="Contacte.jsp">Contáctenos</a>
 				  </li>
 				  <li  class="btn " style=" text-align: right;"> 
-				  <button type="button"  class="btn btn-warning" style=" text-align: right; font-size:15px; height:30px; position:relative;top:-2%; left:100%;"><a href="cli_serv?btns=m_f_r">Regístrate</a>
+				  <button type="button"  class="btn btn-warning" style=" text-align: right; font-size:20px; height:40px; position:relative;top:-2%; left:100%;"><a href="cli_serv?btns=m_f_r">Regístrate</a>
+				  <button type="button"  class="btn btn-warning" style=" text-align: right; font-size:20px; height:40px; position:relative;top:-2%; left:100%;"><a href="usuario?btns=v">Ingresa</a>
+				  
 				</button>
 				</ul>
 				</div>

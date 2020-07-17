@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib>
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.0</jspversion>
+	<shortname>ct</shortname>
+
+	<tag>
+		<name>imagenproducto</name>
+		<tagclass>com.decorame.etiquetas.ImagenTag</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>Muestra la imagen del plan</info>
+	</tag>
+
+	<tag>
+		<name>imagenproductoVarios</name>
+		<tagclass>com.decorame.etiquetas.ImagenTag2</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>Muestra la imagen del plan</info>
+		
+		<attribute>
+			<name>codigo</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		
+	</tag>
+
+
+
+</taglib>

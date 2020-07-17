@@ -18,6 +18,10 @@
 <br>
 <h1>CARRITO DE COMPRAS</h1>
 <div  id=contenedor   style="text-align:center;">
+
+<ct:imagenproducto/>
+<ct:imagenproductoVarios codigo="${1}" />
+
 	<table class="table">
   <thead>
     <tr>

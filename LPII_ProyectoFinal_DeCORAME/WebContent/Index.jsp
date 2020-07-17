@@ -42,7 +42,8 @@
 				    <a class="nav-link"  style=" font-size:15px;color: green;font-family:verdana;" href="Contacte.jsp">Contáctenos</a>
 				  </li>
 				  <li  class="btn " style=" text-align: center;"> 
-				  <button type="button"  class="btn btn-warning" style=" text-align: right; font-size:20px; height:40px; position:relative;top:-2%; left:100%;"><a href="RegUsuario.jsp">Regístrate</a>
+				  <button type="button"  class="btn btn-warning" style=" text-align: right; font-size:20px; height:40px; position:relative;top:-2%; left:100%;"><a href="cli_serv?btns=m_f_r">Regístrate</a>
+				  <button type="button"  class="btn btn-warning" style=" text-align: right; font-size:20px; height:40px; position:relative;top:-2%; left:100%;"><a href="usuario?btns=v">Ingresa</a>
 				</button>
 				</ul>
             </div>

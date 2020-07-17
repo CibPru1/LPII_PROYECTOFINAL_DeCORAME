@@ -20,7 +20,7 @@
 <h1>Registro</h1>
 <div class="container" id="div-regForm">
 
-<div class="form-title"></div>
+<div class="form-title">REGISTRO DE USUARIO</div>
 
 
 <form id="regForm" action="cli_serv" method="post">

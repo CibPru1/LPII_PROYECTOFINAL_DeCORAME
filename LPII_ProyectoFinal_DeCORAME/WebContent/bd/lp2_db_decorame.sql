@@ -61,6 +61,14 @@ CREATE TABLE `asesoramientos` (
   `precio` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `asesoramientos`
+--
+
+INSERT INTO `asesoramientos` (`idAsesoramiento`, `nombre`, `precio`) VALUES
+(1, 'light', 308),
+(2, 'full', 776);
+
 -- --------------------------------------------------------
 
 --

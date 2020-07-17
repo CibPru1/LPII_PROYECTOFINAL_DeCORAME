@@ -73,7 +73,7 @@ Servicios.jsp<%@ page language="java" contentType="text/html; charset=ISO-8859-1
 	            	<li>Hasta 3 revisiones</li>
 	            	<li>Asistencia 2 semanas post diseño </li>
 	            </ul>
-	             <p><a class="btn btn-outline-success" href="carrocompras.jsp" role="button">Comprar</a></p>
+	             <p><a class="btn btn-outline-success" href="AsesoramientosServlet?btns=p" role="button">Comprar</a></p> <!-- href="carrocompras.jsp" -->
 			</figure>
 			<figure>
 				<img src="img/Planes/PlanFull.jpg"alt="">
@@ -91,7 +91,7 @@ Servicios.jsp<%@ page language="java" contentType="text/html; charset=ISO-8859-1
 	            	<li>Revisiones ilimitadas </li>
 	            	<li> Asistencia 4 semanas post diseño</li>
 	            </ul>
-	             <p><a type="button" class="btn btn-outline-success" href="carrocompras.jsp" role="button">Comprar</a></p>
+	             <p><a type="button" class="btn btn-outline-success" href="AsesoramientosServlet?btns=p" role="button">Comprar</a></p>
 			</figure>
 		</section>
 		<br>
